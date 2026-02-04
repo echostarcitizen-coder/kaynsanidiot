@@ -9,7 +9,7 @@ const EMPLOYEES = {
   "Loc Kazinsky": 20, "Pat Veil": 20, "Will Ospreay": 20,
   "Dylan Maguire": 20, "Kayn Fluit": 20, "Logini Daogini": 20,
   "Nathan Griffin": 20, "Jake Cherry": 20, "Harry Grey": 20,
-  "William Butcher": 20, "Testing Sushi": 100
+  "William Butcher": 20
 };
 
 const PARTNERS = {
@@ -143,4 +143,5 @@ function wipeWithPin() {
 
 loadLogs();
 renderTotals();
+
 
