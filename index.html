@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Soul Sushi POS</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<header>
+  SOUL SUSHI<br>
+  <span>魂の寿司</span>
+</header>
+
+<div class="card">
+  <select id="employee"></select>
+</div>
+
+<div class="card">
+  <select id="partner"></select>
+</div>
+
+<div class="card">
+  <select id="product"></select>
+  <button onclick="addItem()">ADD ITEM</button>
+</div>
+
+<div class="card">
+  <div class="line">
+    <span>Subtotal</span>
+    $<span id="subtotal">0</span>
+  </div>
+  <div class="line">
+    <span>Partner Discount</span>
+    -<span id="discountPct">0</span>%
+  </div>
+  <div class="total">
+    $<span id="total">0</span>
+  </div>
+  <button onclick="saveInvoice()">SAVE SALE</button>
+</div>
+
+<div class="card">
+  <h3>Weekly Sales Log</h3>
+  <div id="logs"></div>
+</div>
+
+<div class="card">
+  <button onclick="downloadWeekly()">DOWNLOAD WEEKLY LOG</button>
+  <button class="danger" onclick="wipeWithPin()">WIPE LOGS</button>
+</div>
+
+<script src="js/backend.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
